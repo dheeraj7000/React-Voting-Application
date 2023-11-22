@@ -23,3 +23,5 @@ npm start
 for custom credits(testing)
 
 ->https://voltafaucet.energyweb.org/
+
+https://volta-explorer.energyweb.org/
