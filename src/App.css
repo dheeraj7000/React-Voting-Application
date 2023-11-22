@@ -1,10 +1,27 @@
-.login-container {
+/* Common Styles */
+body {
+  background-image: url('./pic2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Login Container */
+.login-container {
+  /* background: linear-gradient(to bottom, #ffffff, #f1f1f1); */
+  background-image: url('./pic3.png');
+  text-align: center;
+  color: #ccc;
 }
 
 .welcome-message {
@@ -14,28 +31,24 @@
 }
 
 .login-button {
-  background-color: #007bff;
+  background: #007bff;
   color: #fff;
   font-size: 1.2rem;
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 5px;
   padding: 1rem 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .login-button:hover {
-  background-color: #0069d9;
+  background: #0069d9;
 }
 
-
+/* Connected Container */
 .connected-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f1f1f1;
+  background: linear-gradient(to bottom, #ffffff, #f1f1f1);
 }
 
 .connected-header {
@@ -51,11 +64,11 @@
 }
 
 .connected-button {
-  background-color: #007bff;
+  background: #007bff;
   color: #fff;
   font-size: 1.2rem;
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 5px;
   padding: 1rem 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -63,7 +76,7 @@
 }
 
 .connected-button:hover {
-  background-color: #0069d9;
+  background: #0069d9;
 }
 
 .connected-contract-address {
@@ -71,29 +84,52 @@
   text-align: center;
 }
 
-
+/* Candidates Table */
 .candidates-table {
   border-collapse: collapse;
   width: 50%;
-  text-align:center;
+  text-align: center;
+  margin-top: 20px;
+  align-items: center;
 }
 
 .candidates-table th, .candidates-table td {
-  padding: 8px;
-  text-align: left;
+  padding: 12px;
+  text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
 .candidates-table th {
-  background-color: #f2f2f2;
+  background: #000c5c;
+  border: #050506;
+  justify-self: center;
 }
 
+/* Input Styles */
 input[type=number] {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
   margin-bottom: 10px;
+  transition: border-color 0.3s ease;
 }
 
+input[type=number]:focus {
+  border-color: #007bff;
+}
+
+/* Vote Candidate Container */
+.connected-container {
+  background-image: url('./pic1.png'); 
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.vote-text {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
